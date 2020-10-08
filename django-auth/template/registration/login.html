@@ -1,0 +1,16 @@
+{% extends "index1.html" %}
+{% block content %}
+    
+    <div class="container-fluid" style="background-color: aquamarine;">
+        <div class="row" >
+            <div class="col-md-3" style="margin: 0 auto">
+                <form method="POST" style="text-align: center;">
+                    <h1>System Login</h1>
+                    {% csrf_token %}
+                    {{form.as_p}}      
+                    <button>Login</button>
+                </form>
+            </div>    
+        </div>    
+    </div>
+{% endblock %}
